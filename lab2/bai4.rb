@@ -13,7 +13,7 @@ puts "Mang tang dan : "
 puts arr.sort;
 
 puts "Mang giam dan : "
-puts arr.sort_by;
+puts arr.sort.reverse;
 
 
 
