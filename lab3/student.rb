@@ -15,7 +15,7 @@ class Student
 
     def name
         @name
-      end
+    end
       # Định nghĩa setter để cập nhật biến
     def name=(name)
         @name = name
