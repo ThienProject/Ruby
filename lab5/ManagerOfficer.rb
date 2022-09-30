@@ -22,36 +22,42 @@ class ManagerOfficer
       name = gets;
       print "Enter age :";
       age = gets.to_i;
+      print "Enter sex :";
+      sex = gets;
       print "Enter Address :";
       address = gets;
 
-      print "Enter officer type";
+      puts "Enter officer type";
       puts "Enter a: to insert Enginner";
       puts "Enter b: to insert Worker";
       puts "Enter c: to insert Staff";
-      offticerType = gets;
+      offticerType = gets.chomp;
       case  offticerType
-      when "a"
-        print "Enter branch";
+      when 'a'
+        print "Enter branch : ";
         branch = gets;
         engineer = Engineer.new(name, age, sex, address, branch)
         managerOfficer_260.push(engineer);
       when "b"
-        print "Enter level";
+        print "Enter level : ";
         level = gets;
         wooker_260 = Wooker.new(name, age, sex, address, level)
         managerOfficer_260.push(wooker_260);
       when "c"
-        print "Enter job";
+        print "Enter job : ";
         job = gets;
         staff_260 = Staff.new(name, age, sex, address, job)
         managerOfficer_260.push(staff_260);
+      else 
+        puts "Please enter true"
       end
     when 3
+      puts "Danh sach can bo : ";
+      puts managerOfficer_260.length();
       for i in 0..(managerOfficer_260.length() -1)
-        $managerOfficer_260[i].showInformation();
+        managerOfficer_260[i].showInformation();
         puts "-----------";
-    end
+      end
     else
       break;
     end

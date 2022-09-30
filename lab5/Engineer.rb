@@ -1,5 +1,5 @@
 require_relative "./Officer.rb"
-class Staff < Officer
+class Engineer < Officer
     @branch_260;
     def initialize(name, age, sex, address, branch)
         super(name, age, sex, address);
@@ -8,7 +8,7 @@ class Staff < Officer
     attr_accessor :branch_260;
     def showInformation()
         super();
-        puts "branch: #{branch_260}";
+        puts " branch: #{branch_260}";
     end
 end
 

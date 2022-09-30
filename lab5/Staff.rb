@@ -8,6 +8,6 @@ class Staff < Officer
     attr_accessor :job_260;
     def showInformation()
         super();
-        puts "job: #{job_260}";
+        puts " job: #{job_260}";
     end
 end
