@@ -1,4 +1,4 @@
-load "Staff.rb";
+require_relative "Staff.rb";
 load "Engineer.rb";
 load "Wooker.rb";
 class ManagerOfficer 
