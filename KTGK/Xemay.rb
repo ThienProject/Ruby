@@ -2,7 +2,7 @@ load "./Phuongtien.rb"
 class Xemay < Phuongtien
     @congXuat_260;
     @dungTichBinhXang_260;
-    
+    attr_accessor :dungTichBinhXang_260:congXuat_260;
     def initialize(id_260, hangSanXuat_260, namSanXuat_260, dongXe_260, gia_260, bienSo_260, mauXe_260, congXuat, dungTichBinhXang)
         super(id_260, hangSanXuat_260, namSanXuat_260, dongXe_260, gia_260, bienSo_260, mauXe_260);
         @congXuat_260 = congXuat

@@ -1,6 +1,6 @@
 require_relative "Staff.rb";
-load "Engineer.rb";
-load "Wooker.rb";
+require_relative "Engineer.rb";
+require_relative "Wooker.rb";
 class ManagerOfficer 
   managerOfficer_260 = [];
   while true
